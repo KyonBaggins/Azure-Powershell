@@ -2,7 +2,7 @@
 Select-AzSubscription -SubscriptionId '{Subscription id of the LA workspace}'
 
 $workspaceName = '{Name of the LA workspace}'
-$resourcegroup = '{Name of the LA workspace}'
+$resourcegroup = '{Name of the Resource Group}'
 
 $workspace = Get-AzOperationalInsightsWorkspace -Name $workspaceName -ResourceGroupName $resourcegroup
 $workspaceId = $workspace.CustomerId
